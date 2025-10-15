@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome Guide - VIP Villa (Bilingual)</title>
+    <style>
+        /* Estilos Base y Fondo */
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            margin: 0;
+            padding: 30px 20px;
+            color: #333;
+            text-align: center;
+            background-color: #fff8e1; /* Dorado muy claro y suave */
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 40px;
+            background-color: #ffffff;
+            border-radius: 20px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+            border: 3px solid #f9a825; /* Borde Naranja-Dorado */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* Título Principal */
+        h1 {
+            color: #d84315;
+            font-size: 3.5em;
+            margin-bottom: 5px;
+            letter-spacing: 2px;
+            text-shadow: 1px 1px 1px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        h1 + p { /* Subtítulo WELCOME */
+            font-size: 1.8em;
+            font-weight: 800;
+            color: #f9a825;
+            margin-top: 0px;
+            margin-bottom: 25px;
+            text-align: center;
+        }
+
+        .stars {
+            color: #f9a825;
+            font-size: 2.5em;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        /* Títulos de Sección */
+        h2 {
+            color: #d84315; 
+            font-size: 1.6em;
+            border-bottom: 3px solid #f9a825; 
+            padding-bottom: 10px;
+            margin-top: 35px;
+            margin-bottom: 25px;
+            position: relative;
+            text-align: center; 
+            width: 100%;
+        }
+
+        /* Detalle decorativo en los títulos */
+        h2::before, h2::after {
+            content: '♦';
+            color: #f9a825;
+            position: absolute;
+            font-size: 1.2em;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        h2::before { left: -25px; }
+        h2::after { right: -25px; }
+
+
+        /* Texto de Contenido y Listas */
+        p, li {
+            font-size: 1.2em;
+            line-height: 1.9;
+            text-align: left;
+            margin: 12px 0;
+            color: #333;
+            width: 100%;
+        }
+
+        .highlight {
+            font-weight: bold;
+            color: #d84315;
+            font-size: 1.25em;
+            padding: 2px 5px;
+            border-radius: 4px;
+        }
+        
+        .chinese {
+            font-size: 1em;
+            color: #757575;
+            font-weight: normal;
+        }
+
+        .data-list, .contact-info, ul {
+            list-style: none;
+            padding: 0;
+            margin-left: 20px;
+            width: 100%;
+        }
+
+        /* Esto crea el bullet y el espacio */
+        .data-list li, .contact-info li, ul li {
+            padding-left: 20px;
+            position: relative;
+            font-weight: 500; 
+        }
+
+        .data-list li::before, .contact-info li::before, ul li::before {
+            content: '•'; /* El bullet físico */
+            color: #f9a825;
+            font-size: 1.5em;
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        
+        .wechat-id {
+            color: #27ae60;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>欢迎光临</h1>
+    <p>WELCOME</p>
+    <p class="stars">✨✨✨✨✨</p>
+
+    <h2>MEAL SCHEDULE - <span class="chinese">用餐时间表</span></h2>
+    <ul class="data-list">
+        <li>Breakfast: <span class="highlight">06:00 A.M. to 09:00 A.M.</span>
+            <br><span class="chinese">早餐: 上午 6:00 至 上午 9:00</span></li>
+        <li>Lunch: <span class="highlight">11:00 A.M. to 02:00 P.M.</span>
+            <br><span class="chinese">午餐: 上午 11:00 至 下午 2:00</span></li>
+        <li>Dinner: <span class="highlight">06:00 P.M. to 09:00 P.M.</span>
+            <br><span class="chinese">晚餐: 下午 6:00 至 下午 9:00</span></li>
+    </ul>
+
+    <h2>WIFI CONNECTION - <span class="chinese">无线网络连接</span></h2>
+    <p style="text-align: center; margin-left: 0;">📶 WiFi Network: <span class="highlight">Las_Mercedes</span></p>
+    <p style="text-align: center; margin-left: 0;">🔑 Password: <span class="highlight">Mercedes.2024</span></p>
+
+    <h2>AMENITIES & SERVICES - <span class="chinese">设施与服务</span></h2>
+    <ul class="data-list">
+        <li>Smoking Area: Available in the <span style="font-weight: bold;">Cigar Lounge</span> and the <span style="font-weight: bold;">Patio</span>.
+            <br><span class="chinese">吸烟区: 可在雪茄休闲室或露台上吸烟。</span></li>
+        <li>Recreation: Feel free to use the Gym and the Pool Area.
+            <br><span class="chinese">休闲: 您可随时使用健身房和游泳池。</span></li>
+        <li>Beverages & Snacks: Coffee, tea, refreshments, and coconut water are available in the Service Area (near the Dining Room), along with snacks like pistachios and cashews.
+            <br><span class="chinese">饮品与小吃: 咖啡、茶、软饮和椰子水可在用餐区附近的服务区获取，小吃 (开心果、腰果) 亦可。</span></li>
+        <li>Transfer Service: If you require any transfer service, please contact the manager.
+            <br><span class="chinese">接送服务: 如需任何接送服务，请联系经理。</span></li>
+    </ul>
+
+    <h2>IMPORTANT CONTACTS - <span class="chinese">重要联系方式</span></h2>
+    <ul class="contact-info">
+        <li>📞 Service Manager: <span class="highlight">+58 414 919 9038</span></li>
+        <li>💬 WeChat ID: <span class="wechat-id">Juan_Service_Manager</span></li>
+    </ul>
+
+    <h2>STAFF ON PREMISES - <span class="chinese">现场工作人员</span></h2>
+    <ul class="data-list">
+        <li>Security Team is located at the Guardhouse.
+            <br><span class="chinese">安保团队位于警卫室。</span></li>
+        <li>A dedicated Service Team and two Chefs are available for your needs.
+            <br><span class="chinese">有一支专业的服务团队和两名厨师为您服务。</span></li>
+    </ul>
+</div>
+
+</body>
+</html>
